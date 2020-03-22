@@ -1,0 +1,35 @@
+.btn_primary {
+    display: block;
+    width: 100%;
+    height: 2.5rem;
+    background-color: #333;
+    margin: 0 auto;
+    padding: 3px 5px;
+    text-decoration: none;
+    border: 1px solid #fff;
+    color: #fff;
+    transition: all 0.3s;
+}
+.btn_primary:hover {
+    background-color: rgb(83, 212, 83);
+    transition: all 0.3s;
+}
+.btn_secondary {
+    display: block;
+    width: 5rem;
+    height: 2.5rem;
+    background-color: #333;
+    margin: 0 auto;
+    padding: 3px 5px;
+    text-decoration: none;
+    border: 1px solid #fff;
+    color: #fff;
+    @include mq(){
+        
+    }
+    &:hover {
+        background-color: rgb(83, 212, 83);
+        color: #fff;
+        transition: all 0.3s;
+    }
+}

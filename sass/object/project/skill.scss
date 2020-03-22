@@ -1,0 +1,71 @@
+#skill {
+    &::before {
+        content: '';
+        display: block;
+        position: relative;
+        bottom: 18vh;
+        border-left: 100vw solid transparent;
+        border-bottom: 18vh solid #222;
+        @include mq() {
+            display: none;
+        }
+     }
+     @include mq() {
+         padding: 0;
+     }
+    }
+
+
+.p-skill {
+    width: 100%;
+    margin: 0 auto;
+    height: 500px;
+    @include mq() {
+        padding: 0;
+        height: 1200px;
+    }
+    span {
+        color: rgb(83, 212, 83);
+    }
+    h2 {
+        text-align: center;
+        font-size: 2rem;
+    }
+    i {
+        display: block;
+        width: 60%;
+        text-align: center;
+        font-size: 5rem;
+        color: rgb(83, 212, 83);
+        margin: 2rem auto;
+        @include mq(){
+            margin: 1rem auto;
+        }
+    }
+    &__area {
+        display: flex;
+        @include mq() {
+            flex-direction: column;
+        }
+        padding: 2rem;
+        box-sizing: border-box;
+        &__card {
+            padding: 2rem;
+            width: 25%;
+            box-sizing:border-box;
+            @include mq() {
+                width: 100%;
+                padding: 1rem;
+                margin-bottom: 1.5rem;
+                border-bottom: 2px solid #555;
+            }
+            &__text {
+                line-height: 1.5;
+                font-size: 1.1rem;
+                @include mq(){
+                    font-size: 1.1rem;
+                }
+            }
+        }
+    }
+}

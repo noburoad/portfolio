@@ -1,0 +1,166 @@
+#about {
+    &::before {
+        content: ''; 
+        display: block;
+        position: relative;
+        top: -12vh;
+        border-left: 100vw solid transparent;
+        border-bottom: 12vh solid #222;
+        @include mq() {
+            display: none;
+        }
+     }
+     
+}
+.p-about {
+    width: 100%;
+    height: 690px;
+    box-sizing: border-box;
+    align-items: center;
+    overflow: hidden;
+    margin: 0 auto;
+    @include mq() {
+        width: 95%;
+        margin: 0 auto;
+        text-align: center;
+        border-radius: 4px;
+        box-shadow: 12px rgba(2, 253, 2,0.5);
+    }
+    background-color: #646770;
+    background-image: -webkit-linear-gradient(bottom, rgba(255, 255, 255, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%), -webkit-radial-gradient(at 50% 87%, rgba(255, 255, 255, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%);
+    background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%), radial-gradient(at 50% 87%, rgba(255, 255, 255, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%);
+    background-blend-mode: multiply,normal;   
+    &::before {
+        content: ''; 
+        display: block;
+        position: relative;
+        top: 0vh;
+        border-left: 100vw solid transparent;
+        border-top: 15vh solid #222;
+        @include mq() {
+            display: none;
+        }
+     }
+    &__wrap {
+        display: flex;
+        @include mq(){
+            flex-direction: column;
+            width: 100%;
+        }
+        position: relative;
+        padding-top: 40px;
+        width: 70%;
+        height: 100%;
+        margin: 0 auto;
+    }
+    &__title {
+        text-align: center;
+        font-size: 4rem;
+        @include mq() {
+            margin-top: 2rem;
+        }
+    }
+    &__imgarea {
+        width: 40%;
+        @include mq() {
+            width: 100%;
+            text-align: center;
+        }
+        &__img {
+            position: relative;
+            display: inline-block;
+            margin: 20px;
+            max-width: 260px;
+            width: 100%;
+            color: #bbb;
+            font-size: 16px;
+            box-shadow: none !important;
+            -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+            img {
+                max-width: 100%;
+                backface-visibility: hidden;
+                vertical-align: top;
+                border-radius: 50%;
+                padding: 10px;
+            }
+            & * ,::before, ::after {
+                -webkit-box-sizing: border-box;
+                box-sizing: border-box;
+                -webkit-transition: all 0.3s linear;
+                transition: all 0.3s linear;
+            }
+                &::before, ::after {
+                -webkit-box-sizing: border-box;
+                box-sizing: border-box;
+                border-radius: 50%;
+                content: '';
+                position: absolute;
+                top: 0px;
+                bottom: 0px;
+                left: 0px;
+                right: 0px;
+                z-index: -1;
+                border: 2px solid rgb(2, 253, 2);
+                border-color: transparent rgb(2, 253, 2);
+                transition: 0.3s;
+            }
+            i {
+                position: absolute;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            font-size: 4em;
+            z-index: 1;
+            }
+            a {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                z-index: 1;
+            }
+            &:hover::before, :hover::after{
+                border-width: 10px;
+                transition: 0.2s;
+            }
+            &:hover::before {
+                -webkit-transform: rotate(45deg);
+                transform: rotate(45deg);
+                
+            }
+            &:hover::after{
+                -webkit-transform: rotate(-45deg);
+                transform: rotate(-45deg);
+            }
+
+        }
+        }
+    
+    &__text{
+        width: 50%;
+        @include mq() {
+            width: 100%;
+            padding: 0 2rem 0 2rem;
+        }
+        &__inner {
+            p {
+                font-size: 1.5rem;
+                @include mq() {
+                    font-size: 1rem;
+                    text-align: left;
+                    margin-bottom: 1rem;
+                }
+                line-height: 1.5;
+                margin-bottom: 18px;
+
+            }
+            &__name{
+                color: rgb(2, 253, 2);
+            }
+        }
+}
+
+}

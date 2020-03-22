@@ -1,0 +1,48 @@
+//==============================================
+/////ブレイクポイント
+//==============================================
+//マップ型変数
+$breakepoints: (
+    'sm': 'screen and (max-width: 414px)',
+    'md': 'screen and (max-width: 768px)',
+    'lg': 'screen and (max-width: 1000px)',
+    'xl': 'screen and (max-width: 1200px)',
+)!default;
+
+//==============================================
+////mixin
+//==============================================
+
+//メディアクエリ
+@mixin mq($breakepoint: sm) {
+    @media #{map-get($breakepoints, $breakepoint)} {
+        @content;
+    }
+}
+//==============================================
+//フォント
+//==============================================
+body {
+    font-family: 'Baloo Da 2', cursive;
+    color: #fff;
+    background-color: #222!important;
+}
+$site-width: 980px;
+p {
+    font-family: 'Baloo Da 2', cursive;
+font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+section span{
+    color: rgb(83, 212, 83);
+}
+//==============================================
+// リンクのカラー
+//==============================================
+a {
+    text-decoration: none;
+    transition: 0.3s;
+    color: #fff;
+    &:hover {
+        color: rgb(83, 212, 83);
+    }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "boxicons": "^2.0.5"
+  },
+  "devDependencies": {
+    "browserify": "^16.5.0",
+    "gulp": "^4.0.2",
+    "gulp-cli": "^2.2.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sass-glob": "^1.1.0",
+    "vinyl-source-stream": "^2.0.0"
+  }
+}
