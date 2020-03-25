@@ -60,7 +60,7 @@
                 </div>
             </section>
             
-            <section class="l-container" id="skill">
+            <section class="l-container__contents" id="skill">
                 <div class="js-title-trigger"><h1 class="p-works__title  js-fade-text">SK<span>I</span>LLS</h1></div>
                 <div class="p-skill">
                     <div class="p-skill__area js-text-trigger">
@@ -77,7 +77,7 @@
                             <i class="p-skill__area__card__icon fab fa-php js-fade-text"></i>
                             <div class="p-skill__area__card__text">
                                 <p class="js-fade-text">フルスクラッチ(生のPHP)でのWEBサービス作成。</p>
-                                <p class="js-fade-text"><span>L</span>aravelでの機能実装等もすることができる。</p>
+                                <p class="js-fade-text">Laravelでの機能実装等もすることができる。</p>
                             </div>
                         </div>
                         <div class="p-skill__area__card">
@@ -85,14 +85,14 @@
                             <i class="p-skill__area__card__icon fab fa-js-square js-fade-text"></i>
                             <div class="p-skill__area__card__text">
                                 <p class="js-fade-text">jsの基礎的な知識</p>
-                                <p class="js-fade-text">jQueryなどのライブラリや<span>V</span>ue.jsなどのフレームワークを使用し動的な操作ができる。</p>
+                                <p class="js-fade-text">jQueryなどのライブラリやVue.jsなどのフレームワークを使用し動的な操作ができる。</p>
                             </div>
                         </div>
                         <div class="p-skill__area__card">
                             <h2 class="js-fade-text">A<span>W</span>S</h2>
                             <i class="p-skill__area__card__icon fab fa-aws js-fade-text"></i>
                             <div class="p-skill__area__card__text">
-                                <p class="js-fade-text"><span>E</span>C2,S3,RDS、Route53などの主なサービスを使い</p>
+                                <p class="js-fade-text">EC2,S3,RDS、Route53などの主なサービスを使い</p>
                                 <p class="js-fade-text">基礎的な設定やサーバーを立ててデプロイをすることができる。</p>
                             </div>
                         </div>
@@ -100,7 +100,6 @@
                     
                 </div>
             </section>
-            
             
             <section class="" id="works">
                 <div class="js-title-trigger"><h1 class="p-works__title  js-fade-text">W<span>O</span>RKS</h1></div>
@@ -117,6 +116,7 @@
                         <p class="js-fade-text">絵が描ける人と、誰かに絵を習いたい人を繋げる。</p>
                         <p class="js-fade-text">phpの理解を深めるため、フレームワークは使わず生のPHPで作成。</p>
                         <a href="../mangabu/index.php" class="p-works__text__btn btn_secondary js-fade-text">見てみる</a>
+                        <p class="js-fade-text p-works__text__res">レスポンシブ: 現在PCのみ</p>
                     </div>
                 </div>
                 <div class="p-works__reverse js-slide-trigger">
@@ -132,6 +132,7 @@
                         <p class="js-fade-text">主にPHPのクラスや継承などの概念を習得。</p>
                         <p class="js-fade-text">ドラ○クエ風の戦闘で令呪を集める。</p>
                         <a href="../fate_oo/index.php" class="p-works__text__btn btn_secondary js-fade-text">見てみる</a>
+                        <p class="js-fade-text p-works__text__res">レスポンシブ: 現在PCのみ</p>
                     </div>
                 </div>
                 <div class="p-works js-slide-trigger js-trigger">
@@ -147,6 +148,7 @@
                         <p class="js-fade-text">CSS設計としてFLOCSS、タスクランナーとしてgulpを使用。</p>
                         <p class="js-fade-text">jQueryなどで動きをつけて程よいリッチさを意識。</p>
                         <a href="../nobunaisou/index.html" class="p-works__text__btn btn_secondary js-fade-text">見てみる</a>
+                        <p class="js-fade-text p-works__text__res">レスポンシブ: PC & スマートフォン</p>
                     </div>
                 </div>
                 <div class="p-works__reverse js-slide-trigger">
@@ -176,26 +178,29 @@
                         <p class="js-fade-text">自らのポートフォリオをFLOCSS、gulpを使用して作成。</p>
                         <p class="js-fade-text">jsライブラリとしてjQueryとbgswitcherを使用</p>
                         <p class="js-fade-text">AWSのEC2、S3、Route53等のサービスを使いデプロイ。</p>
-                        <a href="#top" class="p-works__text__btn btn_secondary js-fade-text">見てみる</a>
+                        <a href="index.html" class="p-works__text__btn btn_secondary js-fade-text">見てみる</a>
+                        <p class="js-fade-text p-works__text__res">レスポンシブ: PC & スマートフォン</p>
                     </div>
                 </div>
-                
             </section>
 
-            <section class="l-container" id="contact">
+            <section class="l-container__contents" id="contact">
                 <div class="p-contact js-text-trigger">
                     <h2 class="js-fade-text">C<span>O</span>NTACT</h2>
-                    <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScL7_XuMm_A-rsyrlgh51igEyvTj0DNd2xENrEg869vcQBlHw/formResponse" class="p-contact__form" method="POST">
+
+                    <form action="contact/mail.php" class="p-contact__form" method="POST">
                         <p class="js-fade-text">お名前</p>
-                        <input type="text" name="entry.2005620554" class="p-contact__form__input js-fade-text" placeholder="例：そん　ごくう">
+                        <input type="text" name="お名前" class="p-contact__form__input js-fade-text" placeholder="例：そん　ごくう">
                         <p class="js-fade-text">メールアドレス</p>
-                        <input type="email" name="entry.1816847731" class="p-contact__form__input js-fade-text" placeholder="kamehameha@example.com">
+                        <input type="email" name="Email" class="p-contact__form__input js-fade-text" placeholder="kamehameha@example.com">
                         <p class="js-fade-text">お問い合わせ内容</p>
-                        <textarea type="text" name="entry.839337160" id="" cols="30" rows="10" class="p-contact__form__textarea js-fade-text" placeholder="お気軽に何でもお問い合わせください。"></textarea>
+                        <textarea type="text" name="お問い合わせ内容" id="" cols="30" rows="10" class="p-contact__form__textarea js-fade-text" placeholder="お気軽に何でもお問い合わせください。"></textarea>
                         <p class="p-contact__form__btn js-fade-text">
                             <button type="submit" class="btn_primary">送信</button>
+                            <button type="reset" class="btn_primary">取り消し</button>
                         </p>
                     </form>
+                    <p>※いたずらや嫌がらせ等は何卒ご遠慮ください</p>
                 </div>                
             </section>
 
@@ -203,6 +208,7 @@
         <footer class="l-footer">
             <p class="l-footer__copy">Copyright ©️ Nubu'sPortfolio All Rights Reserved</p>
         </footer>
+    </div>
         <script src="js/jquery.js"></script>
         <script src="js/app.js"></script>
         <script src="js/jquery.bgswitcher.js"></script>

@@ -11,6 +11,16 @@
     position: fixed;
     transition: 0.3s;
     z-index: 2;
+    &__contact {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 20px;
+        padding-right: 20px;
+        box-sizing: border-box;
+        transition: 0.3s;
+    }
     @include mq {
         height: 60px;
     }

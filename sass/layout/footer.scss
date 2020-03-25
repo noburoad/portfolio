@@ -1,11 +1,18 @@
 .l-footer {
     color: #ddd;
     background-color: #333;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     height: 80px;
+    @include mq() {
+        height: 50px;
+    }
     &__copy {
         margin: 0 auto;
+        @include mq() {
+            font-size: 0.5rem;
+        }
     }
 }

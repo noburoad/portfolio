@@ -376,22 +376,32 @@ svg:not([fill]) {
   cursor: default; }
 
 .l-container {
-  width: 980px;
-  margin-right: auto;
-  margin-left: auto; }
-  @media screen and (max-width: 414px) {
-    .l-container {
-      width: 100%; } }
+  max-width: 1200px;
+  margin: 0 auto; }
+  .l-container__contents {
+    width: 980px;
+    margin-right: auto;
+    margin-left: auto; }
+    @media screen and (max-width: 414px) {
+      .l-container__contents {
+        width: 100%; } }
 
 .l-footer {
   color: #ddd;
   background-color: #333;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   height: 80px; }
+  @media screen and (max-width: 414px) {
+    .l-footer {
+      height: 50px; } }
   .l-footer__copy {
     margin: 0 auto; }
+    @media screen and (max-width: 414px) {
+      .l-footer__copy {
+        font-size: 0.5rem; } }
 
 .l-header {
   width: 100%;
@@ -406,6 +416,15 @@ svg:not([fill]) {
   position: fixed;
   transition: 0.3s;
   z-index: 2; }
+  .l-header__contact {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+    transition: 0.3s; }
   @media screen and (max-width: 414px) {
     .l-header {
       height: 60px; } }
@@ -594,6 +613,7 @@ svg:not([fill]) {
   @media screen and (max-width: 414px) {
     .p-about {
       width: 95%;
+      height: 710px;
       margin: 0 auto;
       text-align: center;
       border-radius: 4px;
@@ -721,6 +741,14 @@ svg:not([fill]) {
     font-size: 2rem;
     text-align: center;
     margin-bottom: 1rem; }
+  .p-contact p {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 1rem; }
+  .p-contact__form__btn {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem; }
   .p-contact__form__input {
     width: 100%;
     height: 4rem;
@@ -740,12 +768,91 @@ svg:not([fill]) {
     border: 3px solid #f6f5f4;
     background-color: #fff; }
 
+.p-contact_thx {
+  margin: 0 auto;
+  width: 40%;
+  height: 100vh; }
+  @media screen and (max-width: 414px) {
+    .p-contact_thx {
+      width: 90%; } }
+  .p-contact_thx__area {
+    margin: 20% auto; }
+    .p-contact_thx__area__text {
+      text-align: center;
+      line-height: 3; }
+    .p-contact_thx__area__btn {
+      width: 50%;
+      margin: 3rem auto; }
+      .p-contact_thx__area__btn a {
+        padding: 0.7rem;
+        text-align: center; }
+
+.p-contact_verifi {
+  margin: 0 auto;
+  width: 40%; }
+  @media screen and (max-width: 414px) {
+    .p-contact_verifi {
+      width: 90%; } }
+  @media screen and (max-width: 414px) {
+    .p-contact_verifi input[type="submit"], .p-contact_verifi input[type="reset"], .p-contact_verifi input[type="button"] {
+      display: block;
+      width: 100%;
+      height: 40px; } }
+  .p-contact_verifi__area {
+    margin-top: 20%; }
+    .p-contact_verifi__area__thx {
+      margin: 0 auto;
+      text-align: center; }
+      .p-contact_verifi__area__thx__btn {
+        width: 100%; }
+  .p-contact_verifi__title {
+    text-align: center;
+    margin-bottom: 2rem; }
+  .p-contact_verifi__text {
+    margin-bottom: 1rem; }
+  .p-contact_verifi__table {
+    width: 100%;
+    margin: 0 auto;
+    border-collapse: collapse; }
+    .p-contact_verifi__table td {
+      border: 1px solid #ccc;
+      padding: 10px; }
+      @media screen and (max-width: 414px) {
+        .p-contact_verifi__table td {
+          width: auto;
+          display: block; } }
+    .p-contact_verifi__table th {
+      border: 1px solid #ccc;
+      padding: 10px;
+      width: 30%;
+      font-weight: normal;
+      background-color: #646770;
+      background-image: -webkit-linear-gradient(bottom, rgba(255, 255, 255, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%), -webkit-radial-gradient(at 50% 87%, rgba(255, 255, 255, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%);
+      background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%), radial-gradient(at 50% 87%, rgba(255, 255, 255, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%);
+      background-blend-mode: multiply,normal;
+      text-align: left; }
+      @media screen and (max-width: 414px) {
+        .p-contact_verifi__table th {
+          width: auto;
+          display: block;
+          margin-top: 5px;
+          border-bottom: 0; } }
+  .p-contact_verifi__btn {
+    width: 50%;
+    margin: 3rem auto;
+    display: flex;
+    justify-content: space-between; }
+
+p.error_messe {
+  margin: 5px 0;
+  color: red; }
+
 #skill::before {
   content: '';
   display: block;
   position: relative;
   bottom: 18vh;
-  border-left: 100vw solid transparent;
+  border-left: 84vw solid transparent;
   border-bottom: 18vh solid #222; }
   @media screen and (max-width: 414px) {
     #skill::before {
@@ -762,7 +869,7 @@ svg:not([fill]) {
   @media screen and (max-width: 414px) {
     .p-skill {
       padding: 0;
-      height: 1200px; } }
+      height: 1300px; } }
   .p-skill span {
     color: #53d453; }
   .p-skill h2 {
@@ -835,7 +942,7 @@ svg:not([fill]) {
   .p-works__imgarea {
     position: relative;
     overflow: hidden;
-    width: 60%;
+    width: 65%;
     height: 100%;
     padding-top: 12px; }
     @media screen and (max-width: 414px) {
@@ -847,7 +954,7 @@ svg:not([fill]) {
         width: 100%;
         border-radius: 4px; }
   .p-works__text {
-    width: 50%;
+    width: 35%;
     height: 100%;
     padding: 3rem;
     border-radius: 10px; }
@@ -855,7 +962,7 @@ svg:not([fill]) {
       .p-works__text {
         width: 100%; } }
     .p-works__text__btn {
-      margin-top: 50px;
+      margin-top: 2rem;
       padding: 12px;
       width: 30%;
       text-align: center; }
@@ -863,6 +970,13 @@ svg:not([fill]) {
         .p-works__text__btn {
           width: 40%;
           margin-top: 2rem; } }
+    .p-works__text__res {
+      font-size: 1rem;
+      text-align: center !important;
+      margin-top: 0.5rem; }
+      @media screen and (max-width: 414px) {
+        .p-works__text__res {
+          font-size: 0.9rem !important; } }
     .p-works__text h2 {
       color: #fff;
       font-size: 24px;
@@ -894,7 +1008,7 @@ svg:not([fill]) {
   left: 0;
   background-color: #53d453;
   width: 100%;
-  height: 80%; }
+  height: 100%; }
   @media screen and (max-width: 414px) {
     .js-cover-slide {
       height: 100%; } }
@@ -915,7 +1029,7 @@ svg:not([fill]) {
   left: 0;
   background-color: #53d453;
   width: 100%;
-  height: 80%; }
+  height: 100%; }
   @media screen and (max-width: 414px) {
     .js-cover-slide-reverse {
       height: 100%; } }

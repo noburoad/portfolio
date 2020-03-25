@@ -1,0 +1,23 @@
+.p-contact_thx {
+    margin: 0 auto;
+    width: 40%;
+    height: 100vh;
+    @include mq() {
+        width: 90%;
+    }
+    &__area {
+        margin: 20% auto;
+        &__text {
+            text-align: center;
+            line-height: 3;
+        }
+    &__btn {
+        width: 50%;
+        margin: 3rem auto;
+        & a {
+            padding: 0.7rem;
+            text-align: center;
+        }
+    }
+}
+}

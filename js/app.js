@@ -58,8 +58,8 @@ $(function(){
               windowHeight = $(window).height();
     
           if (scroll > elemTop - windowHeight + 200){
-            $(this).find('.js-cover-slide').animate({left: -700},1500,"swing");
-            $(this).find('.js-cover-slide-reverse').animate({left: 700},1500,"swing");
+            $(this).find('.js-cover-slide').animate({left: -1000},1500,"swing");
+            $(this).find('.js-cover-slide-reverse').animate({left: 1000},1500,"swing");
           }
         });
       });

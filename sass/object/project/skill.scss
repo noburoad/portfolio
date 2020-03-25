@@ -4,7 +4,7 @@
         display: block;
         position: relative;
         bottom: 18vh;
-        border-left: 100vw solid transparent;
+        border-left: 84vw solid transparent;
         border-bottom: 18vh solid #222;
         @include mq() {
             display: none;
@@ -22,7 +22,7 @@
     height: 500px;
     @include mq() {
         padding: 0;
-        height: 1200px;
+        height: 1300px;
     }
     span {
         color: rgb(83, 212, 83);
